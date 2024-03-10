@@ -6,8 +6,9 @@ output = input()
 
 
 labels = ["Healthy","Powdery","Rust"]
+sets = ["Test","Train","Validation"]
 for label in labels:
-    for set in ["Test","Train","Validation"]:
+    for set in sets:
         dir_path = os.path.join(main_dir,set,set,label)    
         files = os.listdir(dir_path)
         for file in files:
