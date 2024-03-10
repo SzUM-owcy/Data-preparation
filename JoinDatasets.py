@@ -1,8 +1,8 @@
 import shutil
 import os
 
-main_dir = f"D:\\Informatyka\\Mgr\\SEM1\\SZUM\\archive" #input()
-output = f"D:\\Informatyka\\Mgr\\SEM1\\SZUM\\prepared" #input()
+main_dir = input()
+output = input()
 
 
 labels = ["Healthy","Powdery","Rust"]
