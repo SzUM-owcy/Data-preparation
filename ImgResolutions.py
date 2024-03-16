@@ -1,6 +1,7 @@
 import os
 from collections import Counter
 
+
 def res_image (filename):
     with open(filename, 'rb') as file_image:
             file_image.seek (163)
@@ -11,7 +12,7 @@ def res_image (filename):
             return (width,height)
             print("The resolution of the given image is:", width, "x", height)
 
-main_dir = "merged-data"
+main_dir = "merged-data\\unchanged"
 labels = ["Healthy","Powdery","Rust"]
 
 all_widths = []
@@ -32,10 +33,10 @@ for label in labels:
         
     print(label, " Mean Width:", sum(widths)/len(widths))
     print(label, "Mean Height:", sum(heights)/len(heights))
-    print(label, "Widths Count:",Counter(widths))
-    print(label, "Heights Count:",Counter(heights))
+    print(label, "Widths Count:", Counter(widths))
+    print(label, "Heights Count:", Counter(heights))
 
 print("Mean Width:", sum(all_widths)/len(all_widths))
 print("Mean Height:", sum(all_heights)/len(all_heights))
-print("Widths Count:",Counter(all_widths))
-print("Heights Count:",Counter(all_heights))
+print("Widths Count:", Counter(all_widths))
+print("Heights Count:", Counter(all_heights))
