@@ -162,3 +162,4 @@ splits/
 augmented-data/
 augmented-data/*
 .vscode/
+/.vscode
