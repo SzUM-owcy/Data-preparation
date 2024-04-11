@@ -4,6 +4,7 @@ import multiprocessing
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+
 class RgbMean:
     """
     Get mean RGB value
@@ -13,6 +14,7 @@ class RgbMean:
     :return: RGB values mean.
     :rtype: tuple(int, int, int)
     """
+
     def get_rgb_matrix_mean(self, rgb_matrix):
         r_sum = 0
         g_sum = 0
@@ -25,12 +27,11 @@ class RgbMean:
         g_avg = g_sum // len(rgb_matrix)
         b_avg = b_sum // len(rgb_matrix)
         return [r_avg, g_avg, b_avg]
-    
-    
+
     def get_single_image_rgb_mean(self, file_path):
         rgb_matrix = imageInfo.ImageInfo.get_image_rgb_matrix(file_path)
         return self.get_rgb_matrix_mean(rgb_matrix)
-    
+
     """
     Get count of specific RGB colour
 
@@ -47,6 +48,7 @@ class RgbMean:
         [...] # FOR Blue
     ]
     """
+
     def get_rgb_count(self, rgb_means):
         MIN_RGB_VALUE = 0
         MAX_RGB_VALUE = 255
@@ -57,4 +59,4 @@ class RgbMean:
             R_count[rgb_mean[0]] += 1
             G_count[rgb_mean[1]] += 1
             B_count[rgb_mean[2]] += 1
-        return [R_count, G_count, B_count]            
+        return [R_count, G_count, B_count]
