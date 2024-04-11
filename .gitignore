@@ -161,3 +161,4 @@ cython_debug/
 splits/
 augmented-data/
 augmented-data/*
+.vscode/
