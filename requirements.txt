@@ -1,0 +1,7 @@
+numpy==1.25.2
+pandas==2.0.3
+tensorflow @ https://storage.googleapis.com/colab-tf-builds-public-09h6ksrfwbb9g9xv/tensorflow-2.15.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl#sha256=a2ec79931350b378c1ef300ca836b52a55751acb71a433582508a07f0de57c42
+keras==2.15.0
+sklearn-pandas==2.2.0
+matplotlib==3.7.1
+seaborn==0.13.1
