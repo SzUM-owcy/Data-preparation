@@ -163,3 +163,4 @@ augmented-data/
 augmented-data/*
 .vscode/
 /.vscode
+/saved-plots
